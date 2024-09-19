@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DjangoChat</title>
+    <title> {% block title %} {% endblock %} DjangoChat</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -13,7 +13,17 @@
         <div>
             <a href="/" class="text-xl text-white">DjangoChat</a>
         </div>
+
+        <div class="flex items-center space-x-4">
+            <a href="/login/" class="text-white hover:text-gray-300">Login</a>
+
+            <a href="/signup/" class="px-5 py-3 rounded-xl text-white bg-cyan-600 hover:bg-cyan-950">Signup</a>
+        </div>
     </nav>
+    {% block content %}
+    
+    {% endblock %}
+
     
 </body>
 
