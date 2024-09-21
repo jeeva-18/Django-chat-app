@@ -1,3 +1,4 @@
 #virtual-environment
 django-chat
 __pycache__
+db.sqlite3
